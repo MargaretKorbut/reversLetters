@@ -1,7 +1,7 @@
 package org.exemple.util;
 
-public class StringUtil {
-    public static void StringUtil(){
+public class StingUtil {
+    public static void reverseLetters(){
         String s = "J@va the be$t!123"; // надо перевернуть местами буквы, но не символы.
         int n = s.length();  //17
         char c = s.charAt(0);  //J
