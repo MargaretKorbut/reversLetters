@@ -1,12 +1,11 @@
-import static java.lang.Character.isLetter;
+package org.exemple.util;
 
-public class Main {
-    public static void main(String[] args) {
+public class StringUtil {
+    public static void StringUtil(){
         String s = "J@va the be$t!123"; // надо перевернуть местами буквы, но не символы.
         int n = s.length();  //17
         char c = s.charAt(0);  //J
         char[] chars = s.toCharArray();  //массив символов типа такого - ['J', 'a', 'v', 'a']
-
         int left = 0;
         int right = chars.length - 1;
 
