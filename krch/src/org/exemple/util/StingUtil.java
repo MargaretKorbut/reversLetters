@@ -1,18 +1,18 @@
 package org.exemple.util;
 
 public class StingUtil {
-    public static void reverseLetters(){
-        String s = "J@va the be$t!123"; // надо перевернуть местами буквы, но не символы.
-        int n = s.length();  //17
-        char c = s.charAt(0);  //J
-        char[] chars = s.toCharArray();  //массив символов типа такого - ['J', 'a', 'v', 'a']
+    public static void reverseLetters(String s){
+
+        int n = s.length();
+        char c = s.charAt(0);
+        char[] chars = s.toCharArray();
         int left = 0;
         int right = chars.length - 1;
 
         while (left < right) {
             if (!Character.isLetter(chars[left])) {  //если левый символ НЕ буква, идем дальше
                 left++;
-            } else if (!Character.isLetter(chars[right])) {  //если правый символ НЕ буква то идем дальше
+            } else if (!Character.isLetter(chars[right])) {
                 right--;
             } else {
                 char tmp = chars[left];
@@ -21,7 +21,7 @@ public class StingUtil {
                 left++;
                 right--;
             }
-        }  // после всего вайл с массивом, переделываем массив с СТРОКУ, как в начале задания. пишем его.
+        }
         System.out.println(new String(chars));  //массив символов стал строкой
     }
 }
