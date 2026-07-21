@@ -1,7 +1,7 @@
 package org.exemple.util;
 
 public class StingUtil {
-    public static void reverseLetters(String s){
+    public static String reverseLetters(String s){
 
         int n = s.length();
         char c = s.charAt(0);
@@ -22,6 +22,6 @@ public class StingUtil {
                 right--;
             }
         }
-        System.out.println(new String(chars));  //массив символов стал строкой
+        return new String(chars);  //массив символов стал строкой
     }
 }
