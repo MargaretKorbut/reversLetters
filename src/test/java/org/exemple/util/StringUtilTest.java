@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 //Регистр — буквы меняются местами вместе со своим регистром (заглавная едет туда, куда едет буква).
 
 class StingUtilTest {
-    StingUtil util = new StingUtil();
 
         //Обычный случай — пример из условия: "J@va the be$t!123" → "t@eb eht av$J!123".
         @Test
