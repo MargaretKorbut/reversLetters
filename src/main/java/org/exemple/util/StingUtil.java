@@ -3,7 +3,10 @@ package org.exemple.util;
 public class StingUtil {
     public static String reverseLetters(String s) {
 
-        if (s == null || s.isEmpty()) {
+        if (s == null) {
+            return "";
+        }
+        if (s.isEmpty()) {
             return s;
         }
 

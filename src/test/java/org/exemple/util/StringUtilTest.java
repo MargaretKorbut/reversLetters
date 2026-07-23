@@ -31,11 +31,11 @@ class StingUtilTest {
             assertEquals(expected, actual);
         }
 
-        //Пустая строка " " — результат тоже пустая строка.
+        //Пустая строка null — результат пустая строка.
         @Test
-        void testReturnsNullForNullInput() {
-            String input = " ";
-            String expected = " ";
+        void testReturnsEmptyForNullInput() {
+            String input = null;
+            String expected = "";
 
             String actual = StingUtil.reverseLetters(input);
             assertEquals(expected, actual);
