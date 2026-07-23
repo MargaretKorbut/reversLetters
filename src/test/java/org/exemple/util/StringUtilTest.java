@@ -1,4 +1,4 @@
-package org;
+package org.exemple.util;
 
 import org.exemple.util.StingUtil;
 import org.junit.jupiter.api.Test;
@@ -29,8 +29,16 @@ class StingUtilTest {
 
             String actual = StingUtil.reverseLetters(input);
             assertEquals(expected, actual);
+        }
 
-            //если НУЛЬ то нужно сообщение
+        //Пустая строка " " — результат тоже пустая строка.
+        @Test
+        void testReturnsNullForNullInput() {
+            String input = " ";
+            String expected = " ";
+
+            String actual = StingUtil.reverseLetters(input);
+            assertEquals(expected, actual);
         }
 
         //Одна буква "a" — остаётся как есть.
